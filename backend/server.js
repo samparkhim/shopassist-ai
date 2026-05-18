@@ -158,6 +158,63 @@ app.get("/", (req, res) => {
   res.send("Commerce AI Agent Backend Running");
 });
 
+
+
+
+
+
+
+
+
+
+
+
+function handleProductQuery(message) {
+  const msg = message.toLowerCase();
+
+  let product = null;
+
+  if (msg.includes("smartfit") || msg.includes("watch")) {
+    product = products.find((p) => p.name.includes("SmartFit"));
+  } else if (msg.includes("airflex") || msg.includes("shoes")) {
+    product = products.find((p) => p.name.includes("AirFlex"));
+  } else if (msg.includes("headphones")) {
+    product = products.find((p) => p.name.includes("NoiseCancel"));
+  }
+
+  if (!product) return null;
+
+  if (msg.includes("waterproof")) {
+    return `${product.name} is ${
+      product.waterproof ? "waterproof." : "not waterproof."
+    }`;
+  }
+
+  if (msg.includes("warranty")) {
+    return `${product.name} has ${product.warranty}.`;
+  }
+
+  if (msg.includes("size")) {
+    if (product.sizes.length > 0) {
+      return `Available sizes: ${product.sizes.join(", ")}`;
+    }
+    return "This product has no size variants.";
+  }
+
+  return null;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 app.post("/chat", async (req, res) => {
   try {
     const { message } = req.body;
@@ -272,6 +329,14 @@ app.post("/chat", async (req, res) => {
       return res.json({
         reply: `${policies.returns} ${policies.refunds} ${policies.shipping}`
       });
+    }
+
+    const productReply = handleProductQuery(message);
+
+    if (productReply) {
+    return res.json({
+        reply: productReply
+    });
     }
 
     // AI fallback
