@@ -110,10 +110,10 @@ I'm not happy with this experience
 ## Documentation
 
 ### Product Document
-[Upload Product Document PDF here](./docs/ShopAssist_AI_Product_Document.pdf)
+[ShopAssist_AI_Product_Document](./docs/ShopAssist_AI_Product_Document.pdf)
 
 ### Technical Document
-[Upload Technical Document PDF here](./docs/ShopAssist_AI_Technical_Document.pdf)
+[ShopAssist_AI_Technical_Document](./docs/ShopAssist_AI_Technical_Document.pdf)
 
 ---
 
