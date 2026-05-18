@@ -110,10 +110,10 @@ I'm not happy with this experience
 ## Documentation
 
 ### Product Document
-[Upload Product Document PDF here]
+[Upload Product Document PDF here](./docs/product-document.pdf)
 
 ### Technical Document
-[Upload Technical Document PDF here]
+[Upload Technical Document PDF here](./docs/technical-document.pdf)
 
 ---
 
