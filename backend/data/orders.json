@@ -1,0 +1,16 @@
+[
+  {
+    "orderId": "ORD1001",
+    "customerName": "Rahul Sharma",
+    "product": "AirFlex Running Shoes",
+    "status": "Shipped",
+    "deliveryDate": "2026-05-22"
+  },
+  {
+    "orderId": "ORD1002",
+    "customerName": "Priya Singh",
+    "product": "SmartFit Watch",
+    "status": "Delivered",
+    "deliveryDate": "2026-05-15"
+  }
+]

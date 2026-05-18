@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "AirFlex Running Shoes",
+    "price": 2999,
+    "sizes": [7, 8, 9, 10],
+    "waterproof": true,
+    "warranty": "6 months manufacturer warranty",
+    "compatibility": "Sports and daily wear"
+  },
+  {
+    "id": 2,
+    "name": "SmartFit Watch",
+    "price": 4999,
+    "sizes": [],
+    "waterproof": true,
+    "warranty": "1 year manufacturer warranty",
+    "compatibility": "Android and iPhone 15 compatible"
+  },
+  {
+    "id": 3,
+    "name": "NoiseCancel Headphones",
+    "price": 6999,
+    "waterproof": false,
+    "warranty": "1 year manufacturer warranty",
+    "compatibility": "All Bluetooth devices"
+  }
+]
