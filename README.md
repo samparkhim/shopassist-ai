@@ -1,232 +1,179 @@
 # ShopAssist AI
 
-AI-powered customer support agent for e-commerce platforms.
+AI-powered customer support automation for modern e-commerce.
 
-## Overview
-ShopAssist AI is an intelligent commerce support assistant that automates repetitive customer support workflows including product queries, order tracking, returns, refunds, policy clarification, and human escalation.
+ShopAssist AI combines deterministic workflow automation with AI-powered conversational support to handle common customer service queries such as order tracking, refunds, returns, product FAQs, policy support, and escalation handling.
 
-Built as a hackathon MVP with a futuristic AI conversational interface.
+## Live Demo
+
+**Frontend:** https://shopassist-ai-beta.vercel.app  
+**Backend API:** https://shopassist-backend.onrender.com
+
+---
+
+## Problem
+
+E-commerce support teams spend significant time answering repetitive customer queries:
+
+- Where is my order?
+- I want a refund
+- What is your return policy?
+- Is this product waterproof?
+
+This leads to slower response times, higher operational costs, and inconsistent customer experience.
+
+ShopAssist AI solves this through automated support workflows and AI-assisted natural language interaction.
 
 ---
 
 ## Features
 
-### Product Support
-Supports:
-- waterproof checks
-- warranty lookup
-- compatibility information
-- size availability
-
-Examples:
-- Is SmartFit Watch waterproof?
-- What warranty does SmartFit Watch have?
-- What sizes are available for AirFlex Running Shoes?
-
----
-
-### Order Tracking Workflow
-Multi-turn interaction.
-
-Example:
-Customer:
-Where is my order?
-
-Agent:
-Please provide your order ID.
-
-Customer:
-ORD1002
-
-Agent:
-Your order has been successfully delivered.
-
----
-
-### Return / Refund Workflow
-Interactive workflow.
-
-Example:
-Customer:
-I want refund
-
-Agent:
-Please provide your order ID.
-
-Customer:
-ORD1001
-
-Agent:
-Return request successfully created.
-
----
-
-### Policy Assistant
-Handles:
-- return policy
-- refunds
-- shipping
-- cancellation
-
----
-
-### Human Escalation
-Detects frustrated customers.
-
-Triggers:
-- worst service
-- angry
-- talk to human
-- bad service
-
----
-
-### Modern AI Interface
-Includes:
-- futuristic dark UI
-- quick action buttons
-- loading states
-- chat UX
+- Order tracking workflow
+- Refund / return initiation
+- Shipping / refund / return policy support
+- Product FAQ handling
+- Human escalation detection
+- AI-powered conversational assistance
+- Sentiment-aware support routing
+- Hybrid deterministic + LLM architecture
 
 ---
 
 ## Tech Stack
 
-Frontend:
+**Frontend**
 - React
 - Vite
 - CSS
 
-Backend:
+**Backend**
 - Node.js
 - Express.js
-- CORS
-- dotenv
+- Axios
 
-Storage:
-- JSON-based mock persistence
+**AI**
+- OpenRouter API
+- Multi-model fallback LLM routing
+
+**Deployment**
+- Vercel
+- Render
+- GitHub
 
 ---
 
 ## Architecture
 
-Frontend (React + Vite)
-↓
-Backend API (Express)
-↓
-Intent Detection
-↓
-Workflow Orchestrator
-↓
-Business Logic Handlers
-↓
-Store Data Layer
-
----
-
-## Project Structure
-
-```bash
-commerce-ai-agent/
-│
-├── backend/
-│   ├── server.js
-│   ├── data/
-│   │   ├── products.json
-│   │   ├── orders.json
-│   │   ├── policies.json
-│   │   ├── returns.json
-│   ├── .env
-│
-├── src/
-│   ├── App.jsx
-│   ├── App.css
-│   ├── main.jsx
-│   ├── index.css
-│
-├── public/
-├── package.json
-├── package-lock.json
-├── vite.config.js
-├── index.html
-├── README.md
+```text
+User
+ ↓
+React Frontend
+ ↓
+REST API (/chat)
+ ↓
+Express Backend
+ ↓
+Intent Router
+ ├── Order Tracking
+ ├── Refund / Return Workflow
+ ├── Policy Handler
+ ├── Product Query Handler
+ └── AI Reasoning Layer
+ ↓
+Response Engine
 ```
 
 ---
 
-## Setup
+## Example Queries
 
-### Install dependencies
+Try these on the live demo:
+
+```text
+Where is my order?
+ORD1002
+
+I want refund
+ORD1001
+
+What is your return policy?
+
+Is SmartFit Watch waterproof?
+
+Can I wear the SmartFit Watch while swimming?
+
+I'm not happy with this experience
+```
+
+---
+
+## Documentation
+
+### Product Document
+[Upload Product Document PDF here](./docs/product-document.pdf)
+
+### Technical Document
+[Upload Technical Document PDF here](./docs/technical-document.pdf)
+
+---
+
+## Local Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/samparkhim/shopassist-ai.git
+cd shopassist-ai
+```
+
+Install frontend dependencies:
+
 ```bash
 npm install
 ```
 
-### Start frontend
-```bash
-npm run dev
-```
+Install backend dependencies:
 
-Frontend:
-```bash
-http://localhost:5173
-```
-
----
-
-### Start backend
 ```bash
 cd backend
 npm install
+```
+
+Create environment file:
+
+```env
+OPENROUTER_API_KEY=your_api_key_here
+```
+
+Run backend:
+
+```bash
 node server.js
 ```
 
-Backend:
+Run frontend:
+
 ```bash
-http://localhost:5000
+cd ..
+npm run dev
 ```
 
 ---
 
-## API
+## Future Scope
 
-### POST /chat
-
-Request:
-```json
-{
-  "message": "Where is my order?"
-}
-```
-
-Response:
-```json
-{
-  "reply": "Sure. Please provide your order ID to track your shipment."
-}
-```
-
----
-
-## Future Improvements
 - Shopify integration
-- database persistence
-- authentication
-- multilingual support
-- LLM-powered intelligence
-- analytics dashboard
-- ticketing system integration
+- Real database support
+- CRM integration
+- Multilingual support
+- Voice support
+- Admin analytics dashboard
+- Real human ticket routing
 
 ---
 
-## Demo Scenarios
-Try:
-- Where is my order?
-- I want refund
-- What is your return policy?
-- Is SmartFit Watch waterproof?
-- I want to talk to a human agent
+## Project Vision
 
----
+ShopAssist AI is designed as a practical support automation product, not just a chatbot.
 
-## Project
-Hackathon MVP submission — ShopAssist AI
+By combining workflow reliability with AI reasoning, it delivers scalable customer support for modern commerce platforms.
