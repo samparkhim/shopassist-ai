@@ -53,8 +53,8 @@ function App() {
       <div className="chat-container">
         <div className="header">
           <div>
-            <h1>⚡ Commerce AI Agent</h1>
-            <p>Autonomous customer support for modern commerce</p>
+            <h1>⚡ ShopAssist AI</h1>
+            <p>AI-powered customer support for modern commerce</p>
           </div>
           <div className="status">● Online</div>
         </div>
