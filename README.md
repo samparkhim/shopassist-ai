@@ -27,6 +27,30 @@ ShopAssist AI is a hybrid AI customer support assistant that automates repetitiv
 
 ---
 
+## Contribution Note
+
+This project was independently built end-to-end by me, with my time split across both product thinking and engineering execution.
+
+**Product Thinking (35%)**
+- Identifying the core e-commerce customer support problem
+- Defining target users and support workflows
+- Designing the conversational user journey
+- Making scope decisions for the MVP
+- Choosing a hybrid architecture (deterministic workflows + AI reasoning) for reliability and practicality
+- Preparing product documentation and overall project positioning
+
+**Engineering Execution (65%)**
+- Building the frontend chat interface using React + Vite
+- Developing backend APIs using Node.js and Express
+- Implementing workflow orchestration for order tracking, refunds, returns, and policy handling
+- Integrating AI support using OpenRouter LLM APIs with fallback routing
+- Implementing sentiment-based escalation logic
+- Managing REST API communication between frontend and backend
+- Handling deployment on Vercel and Render
+- Repository setup, environment configuration, debugging, and production deployment
+
+The project was intentionally built as a practical, production-inspired support automation system rather than a prototype chatbot.
+
 ## Problem Statement
 
 E-commerce support teams spend significant time handling repetitive customer queries like order tracking, refund requests, return eligibility, and product FAQs. This leads to slower response times, higher operational costs, and inconsistent customer experiences.
