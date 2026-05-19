@@ -21,6 +21,12 @@ ShopAssist AI is a hybrid AI customer support assistant that automates repetitiv
 
 ---
 
+## Demo Video
+
+**See Here:** https://drive.google.com/file/d/1vEiKCZ-U80Pr3b7e-B-_LNX0hFfd2aQk/view?usp=drive_link
+
+---
+
 ## Problem Statement
 
 E-commerce support teams spend significant time handling repetitive customer queries like order tracking, refund requests, return eligibility, and product FAQs. This leads to slower response times, higher operational costs, and inconsistent customer experiences.
