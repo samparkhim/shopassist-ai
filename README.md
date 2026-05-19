@@ -2,7 +2,7 @@
 
 AI-powered customer support automation for modern e-commerce.
 
-ShopAssist AI combines deterministic workflow automation with AI-powered conversational support to handle common customer service queries such as order tracking, refunds, returns, product FAQs, policy support, and escalation handling.
+ShopAssist AI is a hybrid AI customer support assistant that automates repetitive e-commerce workflows such as order tracking, refunds, returns, policy queries, and product support, while also handling natural customer conversations through AI reasoning.
 
 ## Live Demo
 
@@ -11,18 +11,21 @@ ShopAssist AI combines deterministic workflow automation with AI-powered convers
 
 ---
 
-## Problem
+## Screenshots
 
-E-commerce support teams spend significant time answering repetitive customer queries:
+### Home Interface
+![Home Interface](./screenshots/home.png)
 
-- Where is my order?
-- I want a refund
-- What is your return policy?
-- Is this product waterproof?
+### Live AI Conversation
+![AI Chat Demo](./screenshots/chat.png)
 
-This leads to slower response times, higher operational costs, and inconsistent customer experience.
+---
 
-ShopAssist AI solves this through automated support workflows and AI-assisted natural language interaction.
+## Problem Statement
+
+E-commerce support teams spend significant time handling repetitive customer queries like order tracking, refund requests, return eligibility, and product FAQs. This leads to slower response times, higher operational costs, and inconsistent customer experiences.
+
+ShopAssist AI solves this by automating common support workflows while enabling AI-powered conversational assistance.
 
 ---
 
@@ -33,32 +36,9 @@ ShopAssist AI solves this through automated support workflows and AI-assisted na
 - Shipping / refund / return policy support
 - Product FAQ handling
 - Human escalation detection
-- AI-powered conversational assistance
+- AI conversational assistance
 - Sentiment-aware support routing
 - Hybrid deterministic + LLM architecture
-
----
-
-## Tech Stack
-
-**Frontend**
-- React
-- Vite
-- CSS
-
-**Backend**
-- Node.js
-- Express.js
-- Axios
-
-**AI**
-- OpenRouter API
-- Multi-model fallback LLM routing
-
-**Deployment**
-- Vercel
-- Render
-- GitHub
 
 ---
 
@@ -67,7 +47,7 @@ ShopAssist AI solves this through automated support workflows and AI-assisted na
 ```text
 User
  ↓
-React Frontend
+React Frontend (Chat UI)
  ↓
 REST API (/chat)
  ↓
@@ -85,9 +65,37 @@ Response Engine
 
 ---
 
-## Example Queries
+## Tech Stack
 
-Try these on the live demo:
+**Frontend**
+- React
+- Vite
+- CSS
+
+**Backend**
+- Node.js
+- Express.js
+- Axios
+
+**AI**
+- OpenRouter API
+- Multi-model fallback routing
+
+**Deployment**
+- Vercel
+- Render
+- GitHub
+
+---
+
+## Documentation
+
+- [Product Document](./docs/ShopAssist_AI_Product_Document.pdf)
+- [Technical Document](./docs/ShopAssist_AI_Technical_Document.pdf)
+
+---
+
+## Example Queries
 
 ```text
 Where is my order?
@@ -107,39 +115,17 @@ I'm not happy with this experience
 
 ---
 
-## Documentation
-
-### Product Document
-[ShopAssist_AI_Product_Document](./docs/ShopAssist_AI_Product_Document.pdf)
-
-### Technical Document
-[ShopAssist_AI_Technical_Document](./docs/ShopAssist_AI_Technical_Document.pdf)
-
----
-
 ## Local Setup
-
-Clone the repository:
 
 ```bash
 git clone https://github.com/samparkhim/shopassist-ai.git
 cd shopassist-ai
-```
-
-Install frontend dependencies:
-
-```bash
 npm install
-```
-
-Install backend dependencies:
-
-```bash
 cd backend
 npm install
 ```
 
-Create environment file:
+Create `.env` inside backend:
 
 ```env
 OPENROUTER_API_KEY=your_api_key_here
@@ -163,17 +149,14 @@ npm run dev
 ## Future Scope
 
 - Shopify integration
-- Real database support
 - CRM integration
-- Multilingual support
-- Voice support
-- Admin analytics dashboard
-- Real human ticket routing
+- multilingual support
+- voice support
+- analytics dashboard
+- real human ticket routing
 
 ---
 
-## Project Vision
+## Why ShopAssist AI?
 
-ShopAssist AI is designed as a practical support automation product, not just a chatbot.
-
-By combining workflow reliability with AI reasoning, it delivers scalable customer support for modern commerce platforms.
+Unlike rigid bots or unreliable generic chatbots, ShopAssist AI combines workflow reliability with AI reasoning to deliver practical and scalable customer support automation.
